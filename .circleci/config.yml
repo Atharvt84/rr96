@@ -18,6 +18,8 @@ jobs:
           name: "Say hello"
           command: |
              lscpu 
+             curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+             sudo apt install nodejs
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
